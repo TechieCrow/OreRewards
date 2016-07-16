@@ -3,13 +3,11 @@ main: com.techiecrow.OreRewards
 description: give a random chance for a reward when breaking ores.
 version: 1.0.0
 author: TechieCrow
+
 commands:
-  orerewards:
-    description: Main OreRewards Command
-  orerewards.reload:
-    description: OreRewards reload command Usage '/OreRewards Reload'
+  orerewardsreload:
+    description: Ore Rewards Reload Command
+
 permissions:
-  orerewards:
-   default: op
   orerewards.reload:
-   default: op
+    default: op

@@ -36,27 +36,22 @@ public class OreCoal implements Listener
 
     private ArrayList<Object> PlayerPlaced = new ArrayList<>();
 
-    String coalore = this.plugin.getConfig().getString("Coal Ore");
-
-    String coalorereward = this.plugin.getConfig().getString("Coal Ore Rewards");
-
-    int coalorerewardamount = this.plugin.getConfig().getInt("Coal Ore Amount");
-
-    ItemStack IronOreDrop1 = new ItemStack(Material.valueOf(coalorereward), coalorerewardamount);
+    private ItemStack IronOreDrop1 = new ItemStack(Material.DIAMOND, 1);
 
     @EventHandler(priority = EventPriority.MONITOR)
 	public void onBreakEvent(BlockBreakEvent e) {
 
         Player player = e.getPlayer();
 
-        if(e.getBlock().getType() == Material.valueOf(coalore) && RandomNumber() && e.getPlayer().getGameMode() == SURVIVAL)
+        if(e.getBlock().getType() == Material.COAL_ORE && RandomNumber() && e.getPlayer().getGameMode() == SURVIVAL)
         {
             if(PlayerPlaced.contains(e.getBlock().getLocation()))
             {
-                return;
+
             }
             else
             {
+                e.getPlayer().sendMessage("Naturally Generated Block!");
                 e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), IronOreDrop1);
             }
         }
@@ -66,6 +61,7 @@ public class OreCoal implements Listener
     @EventHandler(priority = EventPriority.MONITOR)
     public void onPlaceEvent(BlockPlaceEvent e)
     {
+        e.getPlayer().sendMessage("Player Placed Block!");
         PlayerPlaced.add(e.getBlockPlaced().getLocation());
     }
 }

@@ -1,41 +1,6 @@
-# Ore Rewards Plugin by TechieCrow
+#Ore Rewards Created By TechieCrow
 
-# Prefix = plugin prefix.
-Prefix: '&a[&bOre Rewards&a]&f '
+#The Prefix For The Reload Command
+Prefix: '&a[&bOre Rewards&a]&f'
 
-#Rewards:
-Coal Ore Material: COAL_ORE
-Coal Ore Rewards: DIAMOND
-Coal Ore Amount: 1
-
-Iron Ore Material: IRON_ORE
-Iron Ore  Rewards: DIAMOND
-Iron Ore Amount: 2
-
-Gold Ore Material: GOLD_ORE
-Gold OreRewards: DIAMOND
-Gold Ore Amount: 3
-
-Lapis Ore Material: LAPIS_ORE
-Lapis Ore Rewards: DIAMOND
-Lapis Ore Amount: 4
-
-InActive RedStone Ore Material: REDSTONE_ORE
-InActive RedStone Ore Rewards: DIAMOND
-InActive RedStone Ore Amount: 5
-
-Active RedStone Ore Material: GLOWING_REDSTONE_ORE
-Active RedStone Ore Rewards: DIAMOND
-Active RedStone Ore Amount: 6
-
-Diamond Ore Material: DIAMOND_ORE
-Diamond Ore Rewards: DIAMOND
-Diamond Ore Amount: 7
-
-Emerald Ore Material: EMERALD_ORE
-Emerald Ore Rewards: DIAMOND
-Emerald Ore Amount: 8
-
-Quartz Ore Material: QUARTZ_ORE
-Quartz Ore Rewards: DIAMOND
-Quartz Ore Amount: 9
+#Other Things Down Here
