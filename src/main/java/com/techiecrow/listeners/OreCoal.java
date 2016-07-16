@@ -20,7 +20,7 @@ public class OreCoal implements Listener
     private OreRewards plugin;
     private ArrayList<Object> PlayerPlaced = new ArrayList<>();
 
-    private int randomchance = this.plugin.getConfig().getInt("Iron Ore Reward Chance");
+    //int randomchance = this.plugin.getConfig().getInt("Iron Ore Reward Chance");
 
     private ItemStack CoalOre1 = new ItemStack(Material.DIAMOND, 1);
 
@@ -38,7 +38,7 @@ public class OreCoal implements Listener
 
     private boolean RandomNumber()
     {
-        return randomchance >= getRandomNumber();
+        return 50 >= getRandomNumber();
     }
 
     @EventHandler(priority = EventPriority.MONITOR)
