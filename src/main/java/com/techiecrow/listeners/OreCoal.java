@@ -17,8 +17,11 @@ import static org.bukkit.GameMode.SURVIVAL;
 public class OreCoal implements Listener
 {
     private final Random random = new Random();
-    OreRewards plugin;
+    private OreRewards plugin;
     private ArrayList<Object> PlayerPlaced = new ArrayList<>();
+
+    private int randomchance = this.plugin.getConfig().getInt("Iron Ore Reward Chance");
+
     private ItemStack CoalOre1 = new ItemStack(Material.DIAMOND, 1);
 
     public OreCoal(OreRewards instance)
@@ -28,14 +31,14 @@ public class OreCoal implements Listener
 
     }
 
-    private final int getRandomNumber()
+    private int getRandomNumber()
     {
         return random.nextInt(100) + 1;
     }
 
-    private final boolean RandomNumber()
+    private boolean RandomNumber()
     {
-        return 50 >= getRandomNumber();
+        return randomchance >= getRandomNumber();
     }
 
     @EventHandler(priority = EventPriority.MONITOR)
@@ -45,6 +48,7 @@ public class OreCoal implements Listener
         {
             if(PlayerPlaced.contains(e.getBlock().getLocation()))
             {
+
             } else
             {
                 e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), CoalOre1);
