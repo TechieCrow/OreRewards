@@ -1,4 +1,5 @@
 # OreRewards
-Give players a reward for mining ores, chance of reward is x%/100%.
 
-NOT WORKNG RIGHT NOW - DO NOT DOWNLOAD
+[![Build Status](http://ci.mixelpod.com/buildStatus/icon?job=Ore%20Rewards)](http://ci.mixelpod.com/job/Ore%20Rewards)
+
+Give players a reward for mining ores, chance of reward is x out of 100%.
