@@ -8,7 +8,7 @@
     <version>0.0.1</version>
     <name>OreRewards</name>
     <description>Give players a reward for mining ores, chance of reward is x out of 100%</description>
-
+         
     <build>
         <finalName>${project.name}-${version}</finalName>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
